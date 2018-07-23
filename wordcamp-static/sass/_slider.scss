@@ -1,0 +1,47 @@
+.slide {
+    display: none;
+    overflow: hidden;
+    position: relative;
+    height: 40.5em;
+    background-size: cover;
+
+    &:before {
+        @include before-after(100%, 100%);
+        background-color:rgba(27,27,27, 0.5);
+    }
+    
+}
+
+.slideshow {
+    padding-top: 7.5em;
+    margin-top:-7.5em;
+    transition:(all 0.9s ease-in);
+    
+
+   
+   
+    h1 {
+        padding-top: 6em;
+        font-size:3em;
+        text-transform: initial;
+        font-family: 'Rufina', serif;
+        font-weight:700;
+    }
+
+    p {
+        text-align:center;
+        width:50%;
+        margin:1.5em auto;
+    }
+
+    h1, p {
+        position: relative;
+        z-index: 3;
+        color:#fff;
+        z-index:9999;
+    }
+
+   
+    
+
+}
